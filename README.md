@@ -1,4 +1,4 @@
-Risky Zone Avoidance Strategies for Drones [CCECE 2021 Supplementary Material [1]]
+Risky Zone Avoidance Strategies for Drones [CCECE 2021]
 ===
 
 ### Michel Barbeau, Carleton University, School of Computer Science, Canada.
@@ -9,15 +9,15 @@ Risky Zone Avoidance Strategies for Drones [CCECE 2021 Supplementary Material [1
 
 ## Abstract
 
-We consider the problem of a drone having to traverse a given terrain,
-such that traversing the terrain exposes the drone to certain risks
-(e.g., concentration of chemicals, severe thunderstorm wind gusts or
-any disturbing weather phenomena.) The goal of the drone is to
-navigate the terrain while minimizing the amount of risk. We develop a
-model for quantifying the exposure to a risk factor in a circular zone
-model. We propose two main strategies based on either rectilinear or
-curvilinear trajectories. We validate the work using numeric
-simulations.
+Supplementary Material to Ref. [1]. We consider the problem of a drone 
+having to traverse a given terrain, such that traversing the terrain 
+exposes the drone to certain risks (e.g., concentration of chemicals, 
+severe thunderstorm wind gusts or any disturbing weather phenomena.) 
+The goal of the drone is to navigate the terrain while minimizing the 
+amount of risk. We develop a model for quantifying the exposure to a 
+risk factor in a circular zone model. We propose two main strategies 
+based on either rectilinear or curvilinear trajectories. We validate 
+the work using numeric simulations. 
 
 ## Keywords
 
