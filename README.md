@@ -1,4 +1,4 @@
-Risky Zone Avoidance Strategies for Drones [Supplementary Material]
+Risky Zone Avoidance Strategies for Drones [CCECE 2021 Supplementary Material [1]]
 ===
 
 ### Michel Barbeau, Carleton University, School of Computer Science, Canada.
@@ -56,14 +56,14 @@ of exposure to risk by the drone.
 We focus on simulations and experimental results. We consider the
 problem of how to navigate a domain while at the same time minimizing
 the amount of risk that a flying drone is exposed to while flying a
-curvilinear trajectory. We use and extend SwarmLab [1], a MATLAB
+curvilinear trajectory. We use and extend SwarmLab [2], a MATLAB
 simulation environment for swarms of drones implementing existing
 object collision algorithms, such as those by Olfati-Saber and Murray
-[2] and Vasarhelyi et al. [3].
+[3] and Vasarhelyi et al. [4].
 
 The SwarmLab simulation environment provides physical properties
 associated to either quadcopters or fixed-wing drones (based on
-software implementation of the models in [4], [5]), including mass,
+software implementation of the models in [5], [6]), including mass,
 aerodynamics and control pa- rameters; path planning variables
 represented by a series of waypoints (e.g., starting position S and
 intermediate waypoints in rectangular terrains); and graphic tools to
@@ -73,7 +73,7 @@ We extended the original SwarmLab simulation environment in order to
 represent and visualize risky zones (i.e., non-solid cylindrical
 obstacles placed in the environment), as well the trajectory
 traversing algorithms, adapting the obstacle avoidance schemes in
-Refs. [2], [3], and their implementation in Swarmlab, to allow drones
+Refs. [3], [4], and their implementation in Swarmlab, to allow drones
 applying new curvilinear trajectory strategies. What we do is to adapt
 the potential functions, by assuming that solid obstacles are now
 non-solid zones, hence relaxing the threshold potential schemes in the
@@ -115,7 +115,7 @@ consumption.
 <img src="https://github.com/jgalfaro/mirrored-rswarm/blob/main/figures/results2.png" width="95%"  />
 <img src="https://github.com/jgalfaro/mirrored-rswarm/blob/main/figures/results3.png" width="95%"  />
 
-#### Figure 5. Simulation results using the new features of our modified SwarmLab simulation environment [1]. (a) Rectilinear single drone simulation. (b,c,d) Curvilinear trajectory simulations (following curvilinear references adapted from the collision avoidance algorithms in [2,3] with, respectively, one, ten and twenty drones. (e) Simulation results for rectilinear trajectory simulations. (f) Simulation results for curvilinear trajectory simulations.
+#### Figure 5. Simulation results using the new features of our modified SwarmLab simulation environment [2]. (a) Rectilinear single drone simulation. (b,c,d) Curvilinear trajectory simulations (following curvilinear references adapted from the collision avoidance algorithms in [3,4] with, respectively, one, ten and twenty drones. (e) Simulation results for rectilinear trajectory simulations. (f) Simulation results for curvilinear trajectory simulations.
 
 [![Extended SwarmLab environment for risky zone avoidance](https://github.com/jgalfaro/mirrored-rswarm/blob/main/figures/youtube.png)](https://www.youtube.com/watch?v=KkCrjNprp5Y)
 
@@ -131,7 +131,7 @@ terrain while minimizing the amount of risk. We have developed a model
 for quantifying the exposure to a risk factor in a circular zone
 model; and proposed two main strategies to evaluate the level of risk
 reduction: either rectilinear or curvilinear trajectories. We have
-validated the work by extending SwarmLab [1], a MATLAB simulation
+validated the work by extending SwarmLab [2], a MATLAB simulation
 environment for swarms of drones. We have shown that curvilinear
 trajectories minimize the risk, at the cost of increasing the battery
 consumption.
@@ -141,25 +141,42 @@ consumption.
 Work partially supported by the Natural Sciences and Engineering
 Research Council of Canada.
 
+
 ## References
 
-[1] E. Soria, F. Schiano, and D. Floreano, Swarmlab: a matlab drone swarm
+If using this code for research purposes, please cite:
+
+[1] M. Barbeau, J. Garcia-Alfaro, E. Kranakis. "Risky Zone Avoidance Strategies for Drones", 34th IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), 2021. 
+
+```
+@inproceedings{barbeau2021ccece2021,
+  title={{Risky Zone Avoidance Strategies for Drones}},
+  author={Barbeau, Michel and Garcia-Alfaro, Joaquin and Kranakis, Evangelos},
+  booktitle={34th IEEE Canadian Conference on Electrical and Computer Engineering (CCECE)},
+  pages={},
+  year={2021},
+  month={ },
+  publisher={IEEE},
+  doi = {},
+  url = {},
+}```
+
+[2] E. Soria, F. Schiano, and D. Floreano, Swarmlab: a matlab drone swarm
 simulator, 2020. Available on-line at: https://github.com/lis-epfl/swarmlab
 
-
-[2] R. Olfati-Saber and R. M. Murray, Distributed cooperative control
+[3] R. Olfati-Saber and R. M. Murray, Distributed cooperative control
 of multiple vehicle formations using structural potential functions,
 in IFAC world congress, vol. 15, no. 1. Barcelona, Spain, 2002, pp.
 242–248.
 
-[3] G. Vasarhelyi, C. Vira ́gh, G. Somorjai, T. Nepusz, A. E. Eiben,
+[4] G. Vasarhelyi, C. Vira ́gh, G. Somorjai, T. Nepusz, A. E. Eiben,
 and T. Vicsek, Optimized flocking of autonomous drones in confined
 environments, Science Robotics, vol. 3, no. 20, 2018.
 
-[4] S. Bouabdallah and R. Siegwart, Full control of a quadrotor, in
+[5] S. Bouabdallah and R. Siegwart, Full control of a quadrotor, in
 2007 IEEE/RSJ International Conference on Intelligent Robots and
 Systems. Ieee, 2007, pp. 153–158.
 
-[5] R. W. Beard and T. W. McLain, Small unmanned aircraft: Theory and
+[6] R. W. Beard and T. W. McLain, Small unmanned aircraft: Theory and
 practice. Princeton university press, 2012.
 
