@@ -159,7 +159,8 @@ If using this code for research purposes, please cite:
   publisher={IEEE},
   doi = {},
   url = {},
-}```
+}
+```
 
 [2] E. Soria, F. Schiano, and D. Floreano, Swarmlab: a matlab drone swarm
 simulator, 2020. Available on-line at: https://github.com/lis-epfl/swarmlab
